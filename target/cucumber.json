@@ -1,0 +1,267 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login-to-app;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7165254500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Open chrome browser and enter url",
+            "match": {
+              "location": "LoginStepDef.open_chrome_browser_and_enter_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1088095300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter valid userName",
+            "match": {
+              "location": "LoginStepDef.enter_search_criteria()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3577469600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Type the correct Password",
+            "match": {
+              "location": "LoginStepDef.click_on_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-app;login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6798835500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Open browser and visit site",
+            "match": {
+              "location": "LoginStepDef.open_browser_and_visit_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1166616400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter wrong userName",
+            "match": {
+              "location": "LoginStepDef.Enter_wrong_userName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3377507100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Type the wrong Password",
+            "match": {
+              "location": "LoginStepDef.Type_the_wrong_Password()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadCreds"
+          }
+        ]
+      }
+    ],
+    "name": "Login to App",
+    "description": "In roder to test the Login Page\nAs a registered user\nI want to verify login conditions",
+    "id": "login-to-app",
+    "keyword": "Feature",
+    "uri": "./features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Testing good and bad creds login",
+        "description": "",
+        "id": "purchase-the-order-from-ecommerce-website;testing-good-and-bad-creds-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7172437800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user enters the web page",
+            "match": {
+              "location": "OutLineLoginStepDef.The_user_enters_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1076197800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "he logins with his name:  rahul",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rahul",
+                  "offset": 26
+                }
+              ],
+              "location": "OutLineLoginStepDef.he_logins_with_his_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3280284500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "enters the password: rahulshettyacademy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rahulshettyacademy",
+                  "offset": 21
+                }
+              ],
+              "location": "OutLineLoginStepDef.enters_the_password(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@withOutline"
+          },
+          {
+            "name": "@withOutline"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Testing good and bad creds login",
+        "description": "",
+        "id": "purchase-the-order-from-ecommerce-website;testing-good-and-bad-creds-login;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6848756600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user enters the web page",
+            "match": {
+              "location": "OutLineLoginStepDef.The_user_enters_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1087801200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "he logins with his name:  Berenice",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Berenice",
+                  "offset": 26
+                }
+              ],
+              "location": "OutLineLoginStepDef.he_logins_with_his_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3334366000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "enters the password: FailPassword",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FailPassword",
+                  "offset": 21
+                }
+              ],
+              "location": "OutLineLoginStepDef.enters_the_password(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@withOutline"
+          },
+          {
+            "name": "@withOutline"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase the order from Ecommerce website",
+    "description": "In roder to use an scenario Outline with Login Page\nAs a random user\nI want to run it with outline scenarios",
+    "id": "purchase-the-order-from-ecommerce-website",
+    "keyword": "Feature",
+    "uri": "./features/WithOutline.feature",
+    "tags": [
+      {
+        "name": "@withOutline",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

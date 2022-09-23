@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-23T22:31:49Z" name="Suite" finished-at="2022-09-23T22:32:35Z" duration-ms="46540">
+    <groups>
+    </groups>
+    <test started-at="2022-09-23T22:31:49Z" name="Test" finished-at="2022-09-23T22:32:35Z" duration-ms="46540">
+      <class name="testAutomation.TestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testAutomation.TestRunner.TestRunner@be68757]" started-at="2022-09-23T22:31:49Z" name="setUpClass" finished-at="2022-09-23T22:31:49Z" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testAutomation.TestRunner.TestRunner@be68757]" started-at="2022-09-23T22:31:49Z" name="feature" data-provider="features" finished-at="2022-09-23T22:32:01Z" duration-ms="12038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testAutomation.TestRunner.TestRunner@be68757]" started-at="2022-09-23T22:32:01Z" name="feature" data-provider="features" finished-at="2022-09-23T22:32:12Z" duration-ms="11346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testAutomation.TestRunner.TestRunner@be68757]" started-at="2022-09-23T22:32:12Z" name="feature" data-provider="features" finished-at="2022-09-23T22:32:24Z" duration-ms="11537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Testing good and bad creds login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testAutomation.TestRunner.TestRunner@be68757]" started-at="2022-09-23T22:32:24Z" name="feature" data-provider="features" finished-at="2022-09-23T22:32:35Z" duration-ms="11272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Testing good and bad creds login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testAutomation.TestRunner.TestRunner@be68757]" started-at="2022-09-23T22:32:35Z" name="tearDownClass" finished-at="2022-09-23T22:32:35Z" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testAutomation.TestRunner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
