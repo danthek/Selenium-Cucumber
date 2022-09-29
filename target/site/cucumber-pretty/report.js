@@ -29,7 +29,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginStepDef.enter_search_criteria()"
+  "location": "LoginStepDef.enter_valid_userName()"
 });
 formatter.result({
   "status": "passed"
@@ -39,7 +39,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDef.click_on_search_button()"
+  "location": "LoginStepDef.type_the_correct_password()"
 });
 formatter.result({
   "status": "passed"
@@ -65,21 +65,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter wrong userName",
+  "name": "Enter wrong credentials",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginStepDef.Enter_wrong_userName()"
+  "location": "LoginStepDef.Enter_wrong_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Type the wrong Password",
+  "name": "click submit button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LoginStepDef.click_submit_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on forgot your password",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDef.Type_the_wrong_Password()"
+  "location": "LoginStepDef.click_on_forgot_your_Password()"
 });
 formatter.result({
   "status": "passed"
@@ -88,12 +98,7 @@ formatter.uri("./features/WithOutline.feature");
 formatter.feature({
   "name": "Purchase the order from Ecommerce website",
   "description": "In roder to use an scenario Outline with Login Page\nAs a random user\nI want to run it with outline scenarios",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@withOutline"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "name": "Testing good and bad creds login",
@@ -149,9 +154,6 @@ formatter.scenario({
   "tags": [
     {
       "name": "@withOutline"
-    },
-    {
-      "name": "@withOutline"
     }
   ]
 });
@@ -190,9 +192,6 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
-    {
-      "name": "@withOutline"
-    },
     {
       "name": "@withOutline"
     }

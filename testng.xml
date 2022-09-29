@@ -4,6 +4,11 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="testAutomation.TestRunner.TestRunner"/>
+      <class name="tests.Test1">
+				<methods>
+					<exclude name="BuyRecord" />
+				</methods>
+			</class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

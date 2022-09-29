@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 8,
+        "line": 11,
         "name": "Login with valid credentials",
         "description": "",
         "id": "login-to-app;login-with-valid-credentials",
@@ -12,10 +12,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7165254500,
+              "duration": 6052585500,
               "status": "passed"
             },
-            "line": 9,
+            "line": 12,
             "name": "Open chrome browser and enter url",
             "match": {
               "location": "LoginStepDef.open_chrome_browser_and_enter_url()"
@@ -24,25 +24,25 @@
           },
           {
             "result": {
-              "duration": 1088095300,
+              "duration": 1132343600,
               "status": "passed"
             },
-            "line": 10,
+            "line": 13,
             "name": "Enter valid userName",
             "match": {
-              "location": "LoginStepDef.enter_search_criteria()"
+              "location": "LoginStepDef.enter_valid_userName()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3577469600,
+              "duration": 3532313700,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "Type the correct Password",
             "match": {
-              "location": "LoginStepDef.click_on_search_button()"
+              "location": "LoginStepDef.type_the_correct_password()"
             },
             "keyword": "Then "
           }
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "line": 15,
+        "line": 18,
         "name": "Login with invalid credentials",
         "description": "",
         "id": "login-to-app;login-with-invalid-credentials",
@@ -63,10 +63,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6798835500,
+              "duration": 8746384100,
               "status": "passed"
             },
-            "line": 16,
+            "line": 19,
             "name": "Open browser and visit site",
             "match": {
               "location": "LoginStepDef.open_browser_and_visit_site()"
@@ -75,25 +75,37 @@
           },
           {
             "result": {
-              "duration": 1166616400,
+              "duration": 1155637000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Enter wrong userName",
+            "line": 20,
+            "name": "Enter wrong credentials",
             "match": {
-              "location": "LoginStepDef.Enter_wrong_userName()"
+              "location": "LoginStepDef.Enter_wrong_credentials()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3377507100,
+              "duration": 3061296800,
               "status": "passed"
             },
-            "line": 18,
-            "name": "Type the wrong Password",
+            "line": 21,
+            "name": "click submit button",
             "match": {
-              "location": "LoginStepDef.Type_the_wrong_Password()"
+              "location": "LoginStepDef.click_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3226269100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click on forgot your password",
+            "match": {
+              "location": "LoginStepDef.click_on_forgot_your_Password()"
             },
             "keyword": "Then "
           }
@@ -113,10 +125,10 @@
     "tags": []
   },
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "line": 17,
+        "line": 16,
         "name": "Testing good and bad creds login",
         "description": "",
         "id": "purchase-the-order-from-ecommerce-website;testing-good-and-bad-creds-login;;2",
@@ -125,10 +137,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7172437800,
+              "duration": 6831396800,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "The user enters the web page",
             "match": {
               "location": "OutLineLoginStepDef.The_user_enters_the_web_page()"
@@ -137,10 +149,10 @@
           },
           {
             "result": {
-              "duration": 1076197800,
+              "duration": 1080058200,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "he logins with his name:  rahul",
             "match": {
               "arguments": [
@@ -155,10 +167,10 @@
           },
           {
             "result": {
-              "duration": 3280284500,
+              "duration": 3277336500,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "enters the password: rahulshettyacademy",
             "match": {
               "arguments": [
@@ -175,14 +187,11 @@
         "tags": [
           {
             "name": "@withOutline"
-          },
-          {
-            "name": "@withOutline"
           }
         ]
       },
       {
-        "line": 18,
+        "line": 17,
         "name": "Testing good and bad creds login",
         "description": "",
         "id": "purchase-the-order-from-ecommerce-website;testing-good-and-bad-creds-login;;3",
@@ -191,10 +200,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6848756600,
+              "duration": 6608674700,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "The user enters the web page",
             "match": {
               "location": "OutLineLoginStepDef.The_user_enters_the_web_page()"
@@ -203,10 +212,10 @@
           },
           {
             "result": {
-              "duration": 1087801200,
+              "duration": 1081702500,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "he logins with his name:  Berenice",
             "match": {
               "arguments": [
@@ -221,10 +230,10 @@
           },
           {
             "result": {
-              "duration": 3334366000,
+              "duration": 4250940200,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "enters the password: FailPassword",
             "match": {
               "arguments": [
@@ -241,9 +250,6 @@
         "tags": [
           {
             "name": "@withOutline"
-          },
-          {
-            "name": "@withOutline"
           }
         ]
       }
@@ -253,15 +259,6 @@
     "id": "purchase-the-order-from-ecommerce-website",
     "keyword": "Feature",
     "uri": "./features/WithOutline.feature",
-    "tags": [
-      {
-        "name": "@withOutline",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 1
-        }
-      }
-    ]
+    "tags": []
   }
 ]

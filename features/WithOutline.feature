@@ -1,5 +1,4 @@
 
-@withOutline
 Feature: Purchase the order from Ecommerce website
 In roder to use an scenario Outline with Login Page
 As a random user

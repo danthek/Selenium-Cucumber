@@ -10,7 +10,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-@CucumberOptions(features = "./features/", glue = { "stepDefinitions.StepDef" },  tags = { "@Login, @BadCreds, @withOutline" },plugin = {
+@CucumberOptions(features = "./features/", glue = { "stepDefinitions.StepDef"},  tags = { "@Login, @BadCreds, @withOutline" },plugin = {
 		"pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json" }, monochrome = true)
 
 public class TestRunner {
