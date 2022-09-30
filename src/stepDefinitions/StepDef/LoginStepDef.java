@@ -20,12 +20,6 @@ public class LoginStepDef {
 
 	@Given("^Open chrome browser and enter url$")
 	public void open_chrome_browser_and_enter_url() throws Throwable {
-		/*System.setProperty("webdriver.chrome.driver",
-				"C:\\\\Users\\\\Abraham\\\\Documents\\\\Danthek\\\\Automated QA Tools\\\\Browser Drivers\\\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://rahulshettyacademy.com/locatorspractice/");
-		Thread.sleep(3000);*/
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\\\Users\\\\Abraham\\\\Documents\\\\Danthek\\\\Automated QA Tools\\\\Browser Drivers\\\\chromedriver.exe");
 		driver = new ChromeDriver();

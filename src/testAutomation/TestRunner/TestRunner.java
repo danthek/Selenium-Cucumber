@@ -1,4 +1,22 @@
 package testAutomation.TestRunner;
+import org.testng.annotations.DataProvider;
+import cucumber.api.CucumberOptions;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+@CucumberOptions(features = "./features/", glue = { "stepDefinitions.StepDef" }, tags = {
+		"@Login, @BadCreds, @withOutline" }, plugin = { "pretty", "html:target/site/cucumber-pretty",
+				"json:target/cucumber.json" }, monochrome = true)
+
+public class TestRunner extends AbstractTestNGCucumberTests {
+	@Override
+	@DataProvider()
+	public Object[][] scenarios() {
+		return super.scenarios();
+	}
+}
+
+//Another test runner config
+/*package testAutomation.TestRunner;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -37,4 +55,5 @@ public class TestRunner {
 	public void tearDownClass() throws Exception {
 		testNGCucumberRunner.finish();
 	}
-}
+}*/
+
