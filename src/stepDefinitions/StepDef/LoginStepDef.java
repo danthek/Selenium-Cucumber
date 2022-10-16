@@ -13,7 +13,7 @@ import loginPage.LoginPage;
 public class LoginStepDef {
 	String userName = "";
 	String password = "";
-	public static WebDriver driver; // we use this so we dont open a new browser tan on each step
+	public static WebDriver driver; // we use this so we dont open a new browser tab on each step
 	public static LoginPage loginPage = new LoginPage();
 
 
